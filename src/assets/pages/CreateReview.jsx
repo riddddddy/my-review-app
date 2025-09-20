@@ -160,7 +160,7 @@ const CreateReview = () => {
 
                     <div className='flex justify-center'>
                         <ReCAPTCHA
-                            sitekey="6LcVZs8rAAAAAAXTHS-auCfByLllH9MFaxkRnKE7"
+                            sitekey= {import.meta.env.VITE_RECAPTCHA_SITE_KEY} 
                             onChange={(token) => setCaptchaToken(token)}
                         />
                     </div>
